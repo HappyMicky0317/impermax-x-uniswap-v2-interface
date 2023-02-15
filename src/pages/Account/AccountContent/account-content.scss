@@ -1,0 +1,93 @@
+.positions-title {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.25rem;
+}
+
+.positions {
+  .positions-header {
+    color: #818d95;
+    font-size: 0.875rem;
+  }
+  
+  > .row {
+    border-bottom: 1px solid #e3e6e8;
+    margin: 0;
+    padding: 0.5rem 0;
+    color: #202020;
+    text-decoration: none;
+
+    &.position:hover {
+      background-color: #f8f9fa;
+    }
+
+    .currency-name {
+      display: flex;
+      flex-grow: 4;
+
+      .combined {
+        flex-grow: 0.75;
+        display: flex;
+        align-items: center;
+        font-size: 1.125rem;
+        line-height: 48px;
+        .currency-overlapped > img {
+          width: 2rem;
+          position: relative;
+        }
+        .currency-overlapped > img:first-child {
+          z-index: 2;
+        }
+        .currency-overlapped > img:last-child {
+          left: -0.625rem;
+        }
+      }
+    } 
+
+    .currency-icon {
+      width: 1.25rem;
+      position: relative;
+      top: -0.1rem;
+      left: -0.375rem;
+    }
+
+    .borrow-balance-details {
+      flex-grow: 1;
+      min-width: 180px;
+      @media only screen and (min-width: 768px) {
+        min-width: 480px;
+      }
+      > .row > div > div {
+        width: 100%;
+      }
+      .details-name {
+        min-width: 140px;
+      }
+      .details-value {
+        min-width: 100px;
+        text-align: right;
+      }
+      .details-net {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        text-align: right;
+        min-width: 180px;
+      }
+    }
+
+    .supply-balance-details {
+      flex-grow: 1;
+      min-width: 300px;
+      > .row > div > div {
+        width: 100%;
+      }
+      .details-amount {
+        min-width: 180px;
+      }
+      .details-value {
+        min-width: 120px;
+        text-align: right;
+      }
+    }
+  }
+}

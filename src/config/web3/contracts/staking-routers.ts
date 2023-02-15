@@ -1,0 +1,14 @@
+
+import { CHAIN_IDS } from 'config/web3/chains';
+
+const STAKING_ROUTER_ADDRESSES: {
+  [chainId: number]: string;
+} = {
+  [CHAIN_IDS.ROPSTEN]: '0x87da8bab9fbd09593f2368dc2f6fac3f80c2a845',
+  [CHAIN_IDS.KOVAN]: '0x8C3736e2FE63cc2cD89Ee228D9dBcAb6CE5B767B',
+  [CHAIN_IDS.ETHEREUM_MAIN_NET]: '0x6032e07e5117907af8b8d24426c4a99647ed0bfd'
+};
+
+export {
+  STAKING_ROUTER_ADDRESSES
+};

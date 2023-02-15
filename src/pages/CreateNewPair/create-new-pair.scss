@@ -1,0 +1,58 @@
+.create-new-pair {
+  .steps {
+    margin-bottom: 1rem;
+    .step {
+      padding: 0.5rem 0.5rem;
+      margin: 0 0.5rem;
+      background-color: #f7f8f9;
+     .step-number {
+        display: inline-block;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        margin-right: 0.25rem;
+        color: #fff;
+        background: #222;
+        font-style: normal;
+      }
+      &.done {
+        border-bottom: 3px solid  #222;
+      }
+      &.selected {
+        border-bottom: 3px solid #00b675;
+        .step-number {
+          background: #00b675;
+        }
+      }
+      &.todo {
+        border-bottom: 3px solid #222;
+      }
+    }
+  }
+  input[type=text] {
+    height: 54px;
+    font-size: 1.125rem;
+  }
+  .input-address-state {
+    &.invalid {
+      color: #d30b0b
+    }
+    &.loading {
+      color: #222
+    }
+    &.valid {
+      color: #00b675
+    }
+  }
+  .submit-container {
+    padding: 1rem;
+    text-align: center;
+    button {
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+}

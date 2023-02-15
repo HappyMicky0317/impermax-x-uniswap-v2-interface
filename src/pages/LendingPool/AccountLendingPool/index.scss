@@ -1,0 +1,136 @@
+// ray test touch <
+.account-lending-pool-page-selector {
+  display: flex;
+  background: #f5f6f7;
+  > * {
+    padding: 10px 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1875rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #88898a;
+    border: 1px solid #ddd;
+  }
+  > *:hover {
+    background: #f9fafb;
+  }
+  > .selected {
+    border-top: 3px solid #02c47c;
+    color: #02c47c;
+    background: #fff !important;
+    border-bottom: 0;
+  }
+}
+
+.account-lending-pool-farming {
+  padding: 2rem;
+  .info {
+    text-align: center;
+    background: #d1e6ee82;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #75abc0;
+    color: #007baa;
+  }
+  .activate-imx-reward {
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 2rem;
+  }
+}
+
+.account-lending-pool-claim {
+  .col-reward-rate {
+    padding: 20px 30px;
+    line-height: 45px;
+  }
+  .col-claim-reward {
+    padding: 20px 30px;
+    .interaction-button {
+      height: 45px;
+      width: 250px;
+    }
+  }
+}
+
+.claim-history {
+  padding: 1rem;
+}
+
+.account-lending-pool-row {
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid #dee2e6;
+
+  .account-lending-pool-name-icon {
+    align-items: center;
+    height: 100%;
+    .token-icon {
+      padding: 0;
+      max-width: 90px;
+      text-align: center;
+      img {
+        width: 32px
+      }
+      &.icon-overlapped {
+        img:first-child {
+          z-index: 2;
+          position: relative;
+        }
+        img:last-child {
+          margin-left: -0.625rem;
+        }
+      }
+    }
+    .token-name {
+      font-size: 1.0675rem;
+      padding: 0;
+    }
+  }
+
+  .inline-account-token-info-container {
+    display: flex;
+    flex-flow: column;
+    line-height: 1.2;
+    .inline-account-token-info {
+      align-items: center;
+      width: 100%;
+      padding: 0.5rem 0;
+      flex: 1;
+      .name {
+        color: #818d95;
+        font-size: 94%;
+      }
+    }
+  }
+
+  .btn-table {
+    display: flex;
+    flex-flow: column;
+    .row {
+      align-items: center;
+      width: 100%;
+      flex: 1;
+      padding: 0.5rem 0;
+      .btn {
+        width: 130px;
+        height: 38px;
+        line-height: 38px;
+        border-radius: 0.375rem;
+        background-color: #202020;
+        color: #fff;
+        border: none;
+        padding: 0;
+        box-shadow: none !important;
+        &.leverage {
+          background-color: #05c881;
+        }
+        &.obtain {
+          background-color: #fd006d;
+        }
+      }
+    }
+  }
+}
+// ray test touch >

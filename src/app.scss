@@ -1,0 +1,46 @@
+
+@import "assets/css/bootstrap-4.5.0/scss/bootstrap";
+
+.card {
+  border-radius: 8px;
+  border: 0 none;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 2px 4px 1px;
+
+  .card-body {
+      padding: 0;
+  }
+}
+
+
+.article {
+  padding: 4rem 4rem;
+
+  a, a:hover, a:link, a:visited {
+    color: #00a368;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+  p, ul {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    padding-left: 2rem;
+    margin-bottom: 0;
+  }
+}

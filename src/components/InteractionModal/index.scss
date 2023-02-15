@@ -1,0 +1,110 @@
+.modal {
+  text-align: center;
+
+  &:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+
+  &.show {
+    display: block !important;
+    align-items: center;
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 500px;
+
+    border-radius: 0.75rem;
+    overflow: hidden;
+
+    .modal-content {
+      border: 0;
+
+      .modal-header {
+        border: 0;
+        padding: 0.625rem 1.5rem;
+        .modal-title {
+          font-size: 1.0675rem;
+          font-weight: normal;
+        }
+        .close {
+          padding: 10px 10px;
+          margin: -10px -10px -10px auto;
+          opacity: 0.8;
+          font-size: 1.75rem;
+        }
+      }
+
+      .modal-body {
+        background-color: #f7f8fa;
+        padding: 1rem 1.5rem;
+
+        .interaction-row {
+          margin-right: -10px;
+          margin-left: -10px;
+          margin-top: 20px;
+          .col, .col-6 {
+            padding-right: 10px;
+            padding-left: 10px;
+          }
+        }
+
+        .form-range {
+          width: 100%;    
+          -webkit-appearance: none;
+          appearance: none;
+          height: 1px;
+          background: #202020;
+          cursor: pointer;
+          margin: 0 0 30px 0;
+          outline: 0;
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            background: #05c881;
+          }
+        }
+
+        .transaction-row {
+          font-size: 0.9375rem;
+          margin: 5px 0;
+          a {
+            color: #202020;
+          }
+          a:hover {
+            color: #606060;
+          }
+          .spinner-border {
+            position: relative;
+            margin-left: 5px;
+            bottom: 1px;
+          }
+        }
+        
+        .leveraged-apy {
+          color: #00b675;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+}
+
+.clear-all-transactions {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #00ac6e;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
